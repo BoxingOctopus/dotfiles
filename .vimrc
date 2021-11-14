@@ -6,22 +6,22 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " Enable Vundle
-Plugin "VundleVim/Vundle.vim"
+Plugin 'VundleVim/Vundle.vim'
 
 let pluginList = [
-    "\ "preservim/nerdtree",
+    "\ 'preservim/nerdtree',
     \ "scrooloose/syntastic",
-    \ "scrooloose/vim-fugitive",
-    \ "altercation/vim-colors-solarized",
-    \ "flazz/vim-colorschemes",
-    \ "morhetz/gruvbox",
-    \ "vim-airline/vim-airline",
-    \ "vim-airline/vim-airline-themes",
-    \ "sheerun/vim-polyglot",
-    \ "valloric/YouCompleteMe",
-    \ "SirVer/utilisnips",
-    "\ "jistr/vim-nerdtree-tabs",
-    \ "shougo/vimproc.vim"
+    \ 'scrooloose/vim-fugitive',
+    \ 'altercation/vim-colors-solarized',
+    \ 'flazz/vim-colorschemes',
+    \ 'morhetz/gruvbox',
+    \ 'vim-airline/vim-airline',
+    \ 'vim-airline/vim-airline-themes',
+    \ 'sheerun/vim-polyglot',
+    \ 'valloric/YouCompleteMe',
+    \ 'SirVer/utilisnips',
+    "\ 'jistr/vim-nerdtree-tabs',
+    \ 'shougo/vimproc.vim'
 \ ]
 
 " Install Plugins
@@ -49,9 +49,9 @@ colorscheme gruvbox
 " Trigger configuration. You need to change this to something other than <tab> if you use one of the following:
 " - https://github.com/Valloric/YouCompleteMe
 " - https://github.com/nvim-lua/completion-nvim
-let g:UtiliSnipsExpandTrigger = "<tab>"
-let g:UtiliSnipsJumpForwardTrigger = "<c-b>"
-let g:UtiliSnipsJumpBackwardTrigger = "<c-z>"
+let g:UtiliSnipsExpandTrigger = '<tab>'
+let g:UtiliSnipsJumpForwardTrigger = '<c-b>'
+let g:UtiliSnipsJumpBackwardTrigger = '<c-z>'
 
 " If you want :UtiliSnipsEdit to split your window.
 let g:UtiliSnipsEditSplit = "vertical"
