@@ -9,6 +9,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 let pluginList = [
+    'scrooloose/nerdtree'
     'scrooloose/syntastic'
     'scrooloose/nerdcommenter'
     'tpope/vim-fugitive'
