@@ -17,10 +17,10 @@ source $HOME/.zshrc.d/env_vars.zsh
 source $HOME/.zshrc.d/aliases.zsh
 
 # Bootstrap Antigen core config
-source $HOME/.zshrc.d/antigen.zsh
+source $HOME/.zshrc.d/antigen_config.zsh
 
 # Make macOS keyboard shortcuts work
-source $HOME/.zshrc.d/macos_keyboard_shortcuts.zsh
+source $HOME/.zshrc.d/macos_keybindings.zsh
 
 # Bootstrap FZF
 source $HOME/.zshrc.d/fzf_bootstrap.zsh
