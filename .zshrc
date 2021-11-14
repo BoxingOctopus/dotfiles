@@ -25,5 +25,5 @@ source $HOME/.zshrc.d/macos_keybindings.zsh
 # Bootstrap FZF
 source $HOME/.zshrc.d/fzf_bootstrap.zsh
 
-# Bootstrap Vundle
-source $HOME/.zshrc.d/vundle_bootstrap.zsh
+# Bootstrap Oh My Vim
+source $HOME/.zshrc.d/ohmyvim_bootstrap.zsh

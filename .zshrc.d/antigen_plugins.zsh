@@ -1,6 +1,6 @@
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
 
-plugins=(\
+ohMyZshPlugins=(\
     git \
     pip \
     command-not-found \
@@ -9,15 +9,19 @@ plugins=(\
     zsh-interactive-cd \
 )
 
-for plugin in $plugins; do
+for plugin in $ohMyZshPlugins; do
     antigen bundle oh-my-zsh/$plugin
 done
 
-# Plugin Reload
-antigen bundle aubreypwd/zsh-plugin-reload@1.0.0
+# Bundles from third-party repos.
 
-# Syntax highlighting bundle.
-antigen bundle zsh-users/zsh-syntax-highlighting
+nonStandardPlugins=(\
+    aubreypwd/zsh-plugin-reload \
+    zsh-users/zsh-syntax-highlighting \
+    jgogstad/passwordless-history \
+    unixorn/fzf-zsh-plugin \
+)
 
-# Keep Passwords/Secrets out of terminal history
-antigen bundle jgogstad/passwordless-history
+for plugin in $nonStandardPlugins; do
+    antigen bundle $plugin
+done
