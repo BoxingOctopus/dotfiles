@@ -26,6 +26,7 @@ let pluginList = [
 
 " Install Plugins
 for i in pluginList
+    echo "Installing Plugin: " + i
     PluginInstall i
 endfor
 
