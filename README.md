@@ -6,10 +6,10 @@ Bootstraps and configures the following:
 * FZF
 * Vundle
 
-To install these dotfiles, clone this repo and run:
+To install these dotfiles, clone this repo to `$HOME/.dotfiles` and run:
 
 ```bash
-$ ln -s ~/dotfiles/zshrc ~/.zshrc
-$ ln -s ~/dotfiles/vimrc ~/.vimrc
-$ ln -s ~/dotfiles/.zshrc.d ~/.zshrc.d
+$ ln -s ~/.dotfiles/.zshrc ~/.zshrc
+$ ln -s ~/.dotfiles/.vimrc ~/.vimrc
+$ ln -s ~/.dotfiles/.zshrc.d ~/.zshrc.d
 ```
