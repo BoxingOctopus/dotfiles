@@ -9,20 +9,20 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 let pluginList = [
-    'scrooloose/nerdtree'
-    'scrooloose/syntastic'
-    'scrooloose/nerdcommenter'
-    'tpope/vim-fugitive'
-    'altercation/vim-colors-solarized'
-    'flazz/vim-colorschemes'
-    'morhetz/gruvbox'
-    'vim-airline/vim-airline'
-    'vim-airline/vim-airline-themes'
-    'vim-airline/vim-airline-segments'
-    'sheerun/vim-polyglot'
-    'valloric/YouCompleteMe'
-    'SirVer/utilisnips'
-    'jistr/vim-nerdtree-tabs'
+    'scrooloose/nerdtree',
+    'scrooloose/syntastic',
+    'scrooloose/nerdcommenter',
+    'tpope/vim-fugitive',
+    'altercation/vim-colors-solarized',
+    'flazz/vim-colorschemes',
+    'morhetz/gruvbox',
+    'vim-airline/vim-airline',
+    'vim-airline/vim-airline-themes',
+    'vim-airline/vim-airline-segments',
+    'sheerun/vim-polyglot',
+    'valloric/YouCompleteMe',
+    'SirVer/utilisnips',
+    'jistr/vim-nerdtree-tabs',
     'shougo/vimproc.vim'
 ]
 
