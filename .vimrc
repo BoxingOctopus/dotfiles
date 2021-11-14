@@ -5,24 +5,35 @@ filetype off             " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+" Enable Vundle
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'tpope/vim-fugitive'
-Plugin 'rstacruz/sparkup', { 'rtp': 'vim/' }
-Plugin 'ascenator/L9', { 'name': 'newL9' }
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'flazz/vim-colorschemes'
-Plugin 'morhetz/gruvbox'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'vim-airline/vim-airline-segments'
-Plugin 'sheerun/vim-polyglot'
-Plugin 'valloric/YouCompleteMe'
-Plugin 'SirVer/utilisnips'
-Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'shougo/vimproc.vim'
+
+let pluginList = [
+    'scrooloose/syntastic'
+    'scrooloose/nerdcommenter'
+    'tpope/vim-fugitive'
+    'altercation/vim-colors-solarized'
+    'flazz/vim-colorschemes'
+    'morhetz/gruvbox'
+    'vim-airline/vim-airline'
+    'vim-airline/vim-airline-themes'
+    'vim-airline/vim-airline-segments'
+    'sheerun/vim-polyglot'
+    'valloric/YouCompleteMe'
+    'SirVer/utilisnips'
+    'jistr/vim-nerdtree-tabs'
+    'shougo/vimproc.vim'
+]
+
+" Install Plugins
+for i in pluginList
+    PluginInstall i
+endfor
+
+" Activate Plugins
+for i in pluginList
+    Plugin i
+endfor
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -43,7 +54,7 @@ let g:UtiliSnipsJumpForwardTrigger = '<c-b>'
 let g:UtiliSnipsJumpBackwardTrigger = '<c-z>'
 
 " If you want :UtiliSnipsEdit to split your window.
-let g:UtiliSnipsEditSplit="vertical"
+let g:UtiliSnipsEditSplit = "vertical"
 
 " Start NERDTree and put the cursor back in the other window.
 autocmd VimEnter * NERDTree | wincmd p
