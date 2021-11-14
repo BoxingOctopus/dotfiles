@@ -8,8 +8,7 @@ call vundle#begin()
 " Enable Vundle
 Plugin 'VundleVim/Vundle.vim'
 
-let pluginList = [
-    'scrooloose/nerdtree',
+let pluginList = [ 'scrooloose/nerdtree',
     'scrooloose/syntastic',
     'scrooloose/nerdcommenter',
     'tpope/vim-fugitive',
@@ -23,8 +22,7 @@ let pluginList = [
     'valloric/YouCompleteMe',
     'SirVer/utilisnips',
     'jistr/vim-nerdtree-tabs',
-    'shougo/vimproc.vim'
-]
+    'shougo/vimproc.vim' ]
 
 " Install Plugins
 for i in pluginList
