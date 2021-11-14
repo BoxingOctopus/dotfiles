@@ -1,5 +1,11 @@
+# Download and install Antigen if it is not already installed
+if [ ! -d "$HOME/.antigen" ]; then
+    mkdir -p "$HOME/.antigen"
+    curl -L git.io/antigen > $HOME/.antigen/antigen.zsh
+fi
+
 # Bootstrap Antigen
-source /etc/antigen/antigen.zsh
+source $HOME/.antigen/antigen.zsh
 
 # Set basic ZSH options
 source $HOME/.zshrc.d/basic_zsh_options.zsh
