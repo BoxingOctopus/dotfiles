@@ -8,7 +8,4 @@ Bootstraps and configures the following:
 
 To install these dotfiles, clone this repo to `$HOME/.dotfiles` and run:
 
-```bash
-$ ln -s ~/.dotfiles/.zshrc ~/.zshrc
-$ ln -s ~/.dotfiles/.zshrc.d ~/.zshrc.d
-```
+`$ ./install.sh`

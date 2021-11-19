@@ -22,8 +22,5 @@ source $HOME/.zshrc.d/antigen_config.zsh
 # Make macOS keyboard shortcuts work
 source $HOME/.zshrc.d/macos_keybindings.zsh
 
-# Bootstrap FZF
-source $HOME/.zshrc.d/fzf_bootstrap.zsh
-
 # Bootstrap Oh My Vim
 source $HOME/.zshrc.d/ohmyvim_bootstrap.zsh
