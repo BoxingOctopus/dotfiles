@@ -18,6 +18,7 @@ Bootstraps and configures the following:
 * [bat](gh:sharkdp/bat)
 * [exa](gh:ogham/exa)
 * [duf](gh:muesli/duf)
+* [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
 ## Usage
 
