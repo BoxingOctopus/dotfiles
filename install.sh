@@ -12,7 +12,11 @@ for link in "${links[@]}"; do
 done
 
 echo "Changing Shell to ZSH..."
-chsh -s /bin/zsh
+if [ "$SHELL" != "/bin/zsh" ]; then
+  chsh -s /bin/zsh
+else
+  echo "ZSH is already the default shell. Skipping..."
+fi
 
 read -p "Would you like to install Oh My VIM? (y/n) " -n 1 -r
 if [[ $REPLY =~ ^[Yy]$ ]]; then
@@ -28,7 +32,11 @@ fi
 read -p "Would you like to install Powerlevel10k? (y/n) " -n 1 -r
 if [[ $REPLY =~ ^[Yy]$ ]]; then
   echo "Installing Powerlevel10k..."
-  echo "export USE_POWERLEVEL10K=1" >> ~/.zshrc.d/env_vars.zsh
+  if [ ! "$USE_POWERLEVEL10K" ]; then
+    echo "export USE_POWERLEVEL10K=1" >> ~/.zshrc.d/env_vars.zsh
+  else
+    echo "Powerlevel10k already installed. Skipping..."
+  fi
 fi
 
 echo "Activating New Environment..."
