@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Creating symlinks for ZSH..."
-links=(".zshrc", ".zshrc.d")
+links=(".zshrc" ".zshrc.d")
 
 for link in "${links[@]}"; do
   if [ -e ~/$link ]; then
