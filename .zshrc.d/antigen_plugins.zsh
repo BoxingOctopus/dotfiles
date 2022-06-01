@@ -5,7 +5,7 @@ ohMyZshPlugins=(\
     pip \
     command-not-found \
     autocomplete \
-    autoupdate-antigen \
+    autoupdate-antigen.zshplugin \
     zsh-interactive-cd \
 )
 
@@ -19,7 +19,7 @@ nonStandardPlugins=(\
     aubreypwd/zsh-plugin-reload \
     zsh-users/zsh-syntax-highlighting \
     jgogstad/passwordless-history \
-    unixorn/fzf-zsh-plugin \
+    unixorn/fzf-zsh-plugin@main \
 )
 
 for plugin in $nonStandardPlugins; do

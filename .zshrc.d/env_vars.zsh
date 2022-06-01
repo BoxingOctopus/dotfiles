@@ -1,2 +1,3 @@
 export EDITOR='vim'
-export ANTIGEN_THEME='romkatv/powerlevel10k'
+#export USE_POWERLEVEL10K=1
+export ANTIGEN_THEME='bira'
