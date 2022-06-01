@@ -5,7 +5,7 @@ antigen use oh-my-zsh
 source $HOME/.zshrc.d/antigen_plugins.zsh
 
 # Load the theme.
-if [ $USE_POWERLEVEL10K = 1 ]; then
+if [ $USE_POWERLEVEL10K=1 ]; then
     antigen theme romkatv/powerlevel10k
 else
     antigen theme $ANTIGEN_THEME
